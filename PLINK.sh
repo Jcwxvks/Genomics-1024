@@ -7,4 +7,5 @@ plink --vcf chs_chr22_kgp.vcf --allow-extra-chr --allow-no-sex --pheno chs_chr22
 # Use phenotype "case control" for GWAS
 plink --vcf chs_chr22_kgp.vcf --allow-extra-chr --allow-no-sex --pheno chs_chr22_pheno.txt --pheno-name gene_expression --linear
 
-# plink --vcf chs_chr22_kgp.vcf --allow-extra-chr --allow-no-sex --recode A -out snp_genotypes
+# Use phenotype "gene expression" for QTL analysis
+plink --vcf chs_chr22_kgp.vcf --allow-extra-chr --allow-no-sex --recode A -out snp_genotypes
